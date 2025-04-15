@@ -26,4 +26,12 @@ body {
 }
 button{
   background-color: rgb(25, 193, 25);
+  height: 50px;
+  width: 150px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+button:hover{
+  background-color: rgb(64, 215, 64);
+  box-shadow: 2px 5px rgb(16, 202, 16);
 }

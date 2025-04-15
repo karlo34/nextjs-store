@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
-
+import details from '@/styles/details.module.css';
 
 function Details() {
     const router = useRouter();
@@ -32,16 +32,17 @@ function Details() {
 
     return (
         <div className='container flex justify-center'>
-            <div className='w-full flex flex-col items-center text-center'>
+            <div className='w-1/4 flex flex-col items-center text-center'>
                 <h1>id: {id}</h1>
                 <img src={product.image} width={300} />
-                <h2>{product.title}</h2>
+                <h1 className={details.naslov}>{product.title}</h1>
                 <p>{product.description}</p>
                 {/* {product.rating && (
                     <p>Rating: {product.rating.rate}</p>
                 )} */}
                 <p>{product.rating?.rate}</p> {/*isto sta i gornji if*/}
                 <p>{product.price}</p>
+                <button>Add to cart</button>
             </div>
         </div>
 
