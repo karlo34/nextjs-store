@@ -21,7 +21,7 @@ const Product = () => {
 
     console.log(productList[0]);
     return (
-        <div className='flex flex-wrap justify-center items-center'>
+        <div className='flex flex-wrap justify-center items-stretch'>
             {
 
                 productList.length > 0 ? (

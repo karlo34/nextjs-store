@@ -34,7 +34,7 @@ function Details() {
         <div className='container flex justify-center'>
             <div className='w-1/4 flex flex-col items-center text-center'>
                 <h1>id: {id}</h1>
-                <img src={product.image} width={300} />
+                <img src={product.image}/>
                 <h1 className={details.naslov}>{product.title}</h1>
                 <p>{product.description}</p>
                 {/* {product.rating && (
