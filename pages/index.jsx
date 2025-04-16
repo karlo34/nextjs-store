@@ -5,6 +5,9 @@ import { ime } from './navbar';
 
 import Navbar from './navbar';
 import Product from './product';
+import LogIn from './login';
+import Cart from './cart';
+import AboutUs from './aboutUs';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -38,9 +41,10 @@ export default function Home() {
         <p>Current Nav Value: {navValue}</p>
       </div>
       <div className="flex justify-center items-center">
-        {
-          navValue === 'home' && <Product />
-        }
+        {navValue === 'home' && <Product />}
+        {navValue === 'login' && <LogIn />}
+        {navValue === 'cart' && <Cart />}
+        {navValue === 'aboutUs' && <AboutUs />}
       </div>
     </div>
   );
