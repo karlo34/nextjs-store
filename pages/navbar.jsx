@@ -10,7 +10,7 @@ const Navbar = ({ currentValue, onValueChange }) => {
                 <h1 onClick={() => onValueChange('home')} id="home" className={`cursor-pointer ${currentValue === 'home' ? 'text-yellow-400 underline underline-offset-5 border-yellow-400' : 'text-white'}`}>Home</h1>
                 <h1 onClick={() => onValueChange('login')} id="login" className={`cursor-pointer ${currentValue === 'login' ? 'text-yellow-400 underline underline-offset-5 border-yellow-400' : 'text-white'}`}>Log in</h1>
                 <h1 onClick={() => onValueChange('cart')} id="cart" className={`cursor-pointer ${currentValue === 'cart' ? 'text-yellow-400 underline underline-offset-5 border-yellow-400' : 'text-white'}`}>Cart</h1>
-                <h1 onClick={() => onValueChange('aboutUs')} id="aboutUs" className={`curser-pointer ${currentValue === 'aboutUs' ? 'text-yellow-400 underline underline-offset-5 border-yellow-400' : 'text-white'}`}>About us</h1>
+                <h1 onClick={() => onValueChange('aboutUs')} id="aboutUs" className={`cursor-pointer ${currentValue === 'aboutUs' ? 'text-yellow-400 underline underline-offset-5 border-yellow-400' : 'text-white'}`}>About us</h1>
             </div>
         </div>
     );
