@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import { useState } from 'react';
 
+
 import Navbar from './navbar';
 import Product from './product';
 import LogIn from './login';
@@ -18,20 +19,13 @@ const geistMono = Geist_Mono({
 });
 
 export default function Home() {
-  const [navValue, setNavValue] = useState("home");
   return (
     <div className="relative min-h-screen">
       <div>
-        <Navbar
-          currentValue={navValue}
-          onValueChange={setNavValue}
-        />
+        <Navbar/>
       </div>
       <div className="flex justify-center items-center">
-        {navValue === 'home' && <Product />}
-        {navValue === 'login' && <LogIn />}
-        {navValue === 'cart' && <Cart />}
-        {navValue === 'aboutUs' && <AboutUs />}
+        <Product />
       </div>
     </div>
   );
